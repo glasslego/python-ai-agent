@@ -1,0 +1,443 @@
+{
+  "model_info": {
+    "n_topics": 5,
+    "n_documents": 46,
+    "timestamp": "2025-08-10T12:31:58.519034"
+  },
+  "topics": [
+    {
+      "id": 0,
+      "words": [
+        "windows",
+        "like",
+        "microsoft",
+        "even",
+        "video",
+        "thats",
+        "security",
+        "lock",
+        "smart",
+        "gaming",
+        "dont",
+        "exchange",
+        "need",
+        "youre",
+        "support"
+      ],
+      "document_count": 14,
+      "avg_confidence": 0.738211707190528
+    },
+    {
+      "id": 1,
+      "words": [
+        "apple",
+        "pro",
+        "ipad",
+        "air",
+        "mini",
+        "macbook",
+        "pixel",
+        "watch",
+        "iphone",
+        "price",
+        "google",
+        "storage",
+        "deals",
+        "search",
+        "ipad pro"
+      ],
+      "document_count": 6,
+      "avg_confidence": 0.9197346169600483
+    },
+    {
+      "id": 2,
+      "words": [
+        "switch",
+        "games",
+        "game",
+        "aug",
+        "nintendo",
+        "world",
+        "7th",
+        "like",
+        "tier",
+        "death",
+        "youtube",
+        "sony",
+        "release",
+        "nintendo switch",
+        "adventure"
+      ],
+      "document_count": 8,
+      "avg_confidence": 0.8444505283122559
+    },
+    {
+      "id": 3,
+      "words": [
+        "season",
+        "issue",
+        "players",
+        "play",
+        "addressed",
+        "free",
+        "weapons",
+        "top",
+        "doom",
+        "battle",
+        "damage",
+        "pass",
+        "black",
+        "range",
+        "skin"
+      ],
+      "document_count": 7,
+      "avg_confidence": 0.8399766011695712
+    },
+    {
+      "id": 4,
+      "words": [
+        "xbox",
+        "2025",
+        "lenovo",
+        "series",
+        "plus",
+        "rollable",
+        "beta",
+        "game",
+        "display",
+        "screen",
+        "battlefield",
+        "gen",
+        "oled",
+        "news",
+        "nintendo"
+      ],
+      "document_count": 11,
+      "avg_confidence": 0.8250556363088443
+    }
+  ],
+  "documents": [
+    {
+      "id": 0,
+      "title": "Nintendo announces \"My Mario\" series of products, including Switch app - Nintendo Everything",
+      "main_topic": 4,
+      "topic_confidence": 0.9959467850520098,
+      "topic_probabilities": []
+    },
+    {
+      "id": 1,
+      "title": "Pixel Watch 4 ‘with Gemini’ has dual-frequency GPS, Quick Charge Dock - 9to5Google",
+      "main_topic": 1,
+      "topic_confidence": 0.9923511803065136,
+      "topic_probabilities": []
+    },
+    {
+      "id": 2,
+      "title": "Announcing the Total Victories Against Shiny Wo‑Chien in Pokémon Scarlet and Pokémon Violet - Pokemon.com",
+      "main_topic": 4,
+      "topic_confidence": 0.99167878333384,
+      "topic_probabilities": []
+    },
+    {
+      "id": 3,
+      "title": "How Koei Tecmo and PlatinumGames Brought Ninja Gaiden 4 to Life - Windows Central",
+      "main_topic": 4,
+      "topic_confidence": 0.9972055375728973,
+      "topic_probabilities": []
+    },
+    {
+      "id": 4,
+      "title": "What Happens When You Fold and Unfold the Samsung Galaxy Z Fold 7 200,000 Times? - CNET",
+      "main_topic": 2,
+      "topic_confidence": 0.9918840978493974,
+      "topic_probabilities": []
+    },
+    {
+      "id": 5,
+      "title": "Take-Two Boss on ‘GTA 6’ Pricing: ‘Our Goal Always Is to Deliver More Value Than What We Charge’ - Variety",
+      "main_topic": 0,
+      "topic_confidence": 0.45184934409263494,
+      "topic_probabilities": []
+    },
+    {
+      "id": 6,
+      "title": "Pixel 10 Pro and Pixel Watch 4 look drop-dead gorgeous in leaked videos - Android Police",
+      "main_topic": 1,
+      "topic_confidence": 0.5472297413946099,
+      "topic_probabilities": []
+    },
+    {
+      "id": 7,
+      "title": "Eternatus brings the Dynamax Cannon Adventure Effect! - Pokémon GO Hub",
+      "main_topic": 2,
+      "topic_confidence": 0.5987009121067871,
+      "topic_probabilities": []
+    },
+    {
+      "id": 8,
+      "title": "Heretic + Hexen, free update for DOOM: The Dark Ages, DOOM Eternal PC Mods and more announced at QuakeCon 2025 - Slayers Club",
+      "main_topic": 3,
+      "topic_confidence": 0.8804985104141245,
+      "topic_probabilities": []
+    },
+    {
+      "id": 9,
+      "title": "iOS 26 beta adds surprise Apple Maps feature that could prove very useful - 9to5Mac",
+      "main_topic": 1,
+      "topic_confidence": 0.9950404773250431,
+      "topic_probabilities": []
+    },
+    {
+      "id": 10,
+      "title": "Microsoft, CISA warn yet another Exchange server bug can lead to 'total domain compromise' - theregister.com",
+      "main_topic": 0,
+      "topic_confidence": 0.9976004409461122,
+      "topic_probabilities": []
+    },
+    {
+      "id": 11,
+      "title": "Xbox Drops Work on ‘Contraband’ Video Game After Four Years - Bloomberg.com",
+      "main_topic": 0,
+      "topic_confidence": 0.503380089305829,
+      "topic_probabilities": []
+    },
+    {
+      "id": 12,
+      "title": "Limited-Time Free QuakeCon 2025 DOOM Slayer Skin - Slayers Club",
+      "main_topic": 3,
+      "topic_confidence": 0.990622593570497,
+      "topic_probabilities": []
+    },
+    {
+      "id": 13,
+      "title": "'Death Stranding 2' Hideo Kojima Interview on Sequel's Big Changes - IndieWire",
+      "main_topic": 0,
+      "topic_confidence": 0.7444015414109073,
+      "topic_probabilities": []
+    },
+    {
+      "id": 14,
+      "title": "‘MindsEye’ is more than the worst game of the year - The Washington Post",
+      "main_topic": 3,
+      "topic_confidence": 0.8823856916949819,
+      "topic_probabilities": []
+    },
+    {
+      "id": 15,
+      "title": "Nintendo Download: 7th August (North America) - Nintendo Life",
+      "main_topic": 2,
+      "topic_confidence": 0.9989163546345132,
+      "topic_probabilities": []
+    },
+    {
+      "id": 16,
+      "title": "Proposed spacecraft could carry up to 2,400 people on a one-way trip to the nearest star system, Alpha Centauri - Live Science",
+      "main_topic": 0,
+      "topic_confidence": 0.44646496563507776,
+      "topic_probabilities": []
+    },
+    {
+      "id": 17,
+      "title": "ROG Xbox Ally Handhelds Reportedly Launching in October — and Prices Have Leaked, Too - Windows Central",
+      "main_topic": 4,
+      "topic_confidence": 0.9972747170200776,
+      "topic_probabilities": []
+    },
+    {
+      "id": 18,
+      "title": "California Sea Lion Who Commandeers Boat Like a Sea Captain Has Us Rolling - PetHelpful",
+      "main_topic": 0,
+      "topic_confidence": 0.5266644023482395,
+      "topic_probabilities": []
+    },
+    {
+      "id": 19,
+      "title": "More than 130,000 Claude, Grok, ChatGPT, and Other LLM Chats Readable on Archive.org - 404 Media",
+      "main_topic": 0,
+      "topic_confidence": 0.6760041616648815,
+      "topic_probabilities": []
+    },
+    {
+      "id": 20,
+      "title": "Can't upgrade your Windows 10 PC? You have 5 options - and 2 months to decide - ZDNET",
+      "main_topic": 0,
+      "topic_confidence": 0.9988331598806047,
+      "topic_probabilities": []
+    },
+    {
+      "id": 21,
+      "title": "Sony WH-1000XM6 review: unbeatable - PhoneArena",
+      "main_topic": 2,
+      "topic_confidence": 0.6053538975544108,
+      "topic_probabilities": []
+    },
+    {
+      "id": 22,
+      "title": "Nintendo's Indie World Showcase - here's everything announced - Eurogamer",
+      "main_topic": 2,
+      "topic_confidence": 0.5816479473898338,
+      "topic_probabilities": []
+    },
+    {
+      "id": 23,
+      "title": "The Framework Desktop made me fall for small form factor PCs - The Verge",
+      "main_topic": 0,
+      "topic_confidence": 0.925915121675709,
+      "topic_probabilities": []
+    },
+    {
+      "id": 24,
+      "title": "2025 Subaru WRX tS review: A scalpel-sharp chassis lets this car dance - Ars Technica",
+      "main_topic": 1,
+      "topic_confidence": 0.991310544138843,
+      "topic_probabilities": []
+    },
+    {
+      "id": 25,
+      "title": "'Mina The Hollower', Yacht Club's Retro Zelda-Inspired Adventure, Scores Switch 2 Release Date - Nintendo Life",
+      "main_topic": 3,
+      "topic_confidence": 0.6781381330999948,
+      "topic_probabilities": []
+    },
+    {
+      "id": 26,
+      "title": "Sony says its Xperia smartphones are still ‘very important’ - 9to5Google",
+      "main_topic": 2,
+      "topic_confidence": 0.9888076889430724,
+      "topic_probabilities": []
+    },
+    {
+      "id": 27,
+      "title": "Android 16 beta schedule leaks for some of Samsung’s recent Galaxy devices - 9to5Google",
+      "main_topic": 4,
+      "topic_confidence": 0.9920048409987099,
+      "topic_probabilities": []
+    },
+    {
+      "id": 28,
+      "title": "Digital Foundry, the most trusted name in game console analysis, is going independent - The Verge",
+      "main_topic": 0,
+      "topic_confidence": 0.9977301497300961,
+      "topic_probabilities": []
+    },
+    {
+      "id": 29,
+      "title": "UFO 50 Gets A Surprise Shadow Drop On Switch Today - Nintendo Life",
+      "main_topic": 0,
+      "topic_confidence": 0.539153229859443,
+      "topic_probabilities": []
+    },
+    {
+      "id": 30,
+      "title": "Battlefield 6 Beta Comparison Shows Difference Between Xbox Series X And Series S - Pure Xbox",
+      "main_topic": 4,
+      "topic_confidence": 0.9950343035622649,
+      "topic_probabilities": []
+    },
+    {
+      "id": 31,
+      "title": "Nintendo Switch OLED Is Somehow $100 Off at Walmart After Price Increases - IGN",
+      "main_topic": 4,
+      "topic_confidence": 0.5464402539899631,
+      "topic_probabilities": []
+    },
+    {
+      "id": 32,
+      "title": "This smart lock lets me see through my door - The Verge",
+      "main_topic": 0,
+      "topic_confidence": 0.9987019980964618,
+      "topic_probabilities": []
+    },
+    {
+      "id": 33,
+      "title": "Massive Apple deal week event now live: M3 iPad Air all-time low, AirPods, M4 MacBooks $300 off, much more - 9to5Toys",
+      "main_topic": 1,
+      "topic_confidence": 0.9984542836352971,
+      "topic_probabilities": []
+    },
+    {
+      "id": 34,
+      "title": "Battlefield 6 Beta: How to unlock Twitch Drops, early access, and exclusive rewards - The Economic Times",
+      "main_topic": 4,
+      "topic_confidence": 0.7174476366189708,
+      "topic_probabilities": []
+    },
+    {
+      "id": 35,
+      "title": "Battlefield 6 Open Beta Forces PC Gamers to Mess About With Their BIOS to Enable Secure Boot — and Call of Duty: Black Ops 7 Is Next - IGN",
+      "main_topic": 4,
+      "topic_confidence": 0.5439078254406726,
+      "topic_probabilities": []
+    },
+    {
+      "id": 36,
+      "title": "Sony CFO says Marathon is expected to release before March, and Bungie’s independence is ‘getting lighter’ - Video Games Chronicle",
+      "main_topic": 2,
+      "topic_confidence": 0.9943351833777379,
+      "topic_probabilities": []
+    },
+    {
+      "id": 37,
+      "title": "CoD Season 5 Patch Notes: BO6 And Warzone Adds Weapon Balancing And Stadium Event - GameSpot",
+      "main_topic": 3,
+      "topic_confidence": 0.9995555561501893,
+      "topic_probabilities": []
+    },
+    {
+      "id": 38,
+      "title": "This 4.5-Star Mini PC (Ryzen 7, 32GB RAM, 512GB SSD) Just Hit Black Friday Pricing, Low in Stock on Amazon - Gizmodo",
+      "main_topic": 0,
+      "topic_confidence": 0.6275024307513722,
+      "topic_probabilities": []
+    },
+    {
+      "id": 39,
+      "title": "Apple sues San Francisco movie theater - SFGATE",
+      "main_topic": 3,
+      "topic_confidence": 0.7176288155538226,
+      "topic_probabilities": []
+    },
+    {
+      "id": 40,
+      "title": "Apple reportedly releasing new Apple TV 4K this fall — here's all the upgrades - Tom's Guide",
+      "main_topic": 4,
+      "topic_confidence": 0.4895567591853284,
+      "topic_probabilities": []
+    },
+    {
+      "id": 41,
+      "title": "I'm an actual landman in Texas. The hit TV show definitely exaggerates — but it gets a few key things right. - Business Insider",
+      "main_topic": 0,
+      "topic_confidence": 0.9007628652700214,
+      "topic_probabilities": []
+    },
+    {
+      "id": 42,
+      "title": "Will iPhone 17 Pro Start at 256GB Storage? - MacRumors",
+      "main_topic": 1,
+      "topic_confidence": 0.9940214749599835,
+      "topic_probabilities": []
+    },
+    {
+      "id": 43,
+      "title": "How To Get A Free Halo Skin In Fortnite - GameSpot",
+      "main_topic": 3,
+      "topic_confidence": 0.731006907703388,
+      "topic_probabilities": []
+    },
+    {
+      "id": 44,
+      "title": "World's First Rollable OLED Screen in a laptop — Hands-on with Lenovo's Strange ThinkBook Plus. Who is this for? - Windows Central",
+      "main_topic": 4,
+      "topic_confidence": 0.8091145566225513,
+      "topic_probabilities": []
+    },
+    {
+      "id": 45,
+      "title": "You Should Farm Destiny 2’s Most Loot-Generous Event In History Right Now - Forbes",
+      "main_topic": 2,
+      "topic_confidence": 0.9959581446422945,
+      "topic_probabilities": []
+    }
+  ]
+}

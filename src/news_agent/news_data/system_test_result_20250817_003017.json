@@ -1,0 +1,240 @@
+{
+  "overall_success": true,
+  "test_timestamp": "2025-08-17 00:30:16",
+  "test_config": {
+    "articles": 3,
+    "category": "technology",
+    "save_results": true
+  },
+  "module_tests": {
+    "data_collection": {
+      "success": true,
+      "execution_time_seconds": 1.101705,
+      "articles_collected": 3,
+      "result": {
+        "success": true,
+        "count": 3,
+        "filename": "news_data/news_technology_20250817_003017.csv",
+        "message": "3개 뉴스 기사가 수집되었습니다."
+      }
+    },
+    "preprocessing": {
+      "success": true,
+      "execution_time_seconds": 0.024174,
+      "processed_articles": 3,
+      "result": {
+        "success": true,
+        "count": 3,
+        "filename": "news_data/news_processed_20250817_003017.csv",
+        "message": "데이터 전처리가 완료되었습니다."
+      }
+    },
+    "keywords_analysis": {
+      "success": true,
+      "execution_time_seconds": 0.009299,
+      "keywords_found": 1,
+      "top_keywords": [
+        [
+          "chars",
+          0.6666666666666666
+        ]
+      ],
+      "result": {
+        "success": true,
+        "keywords": [
+          [
+            "chars",
+            0.6666666666666666
+          ]
+        ],
+        "total_keywords": 1,
+        "files": {
+          "top_keywords": "news_data/keywords_analysis_top_keywords.csv",
+          "document_keywords": "news_data/keywords_analysis_document_keywords.csv",
+          "matrix_info": "news_data/keywords_analysis_matrix_info.csv"
+        },
+        "message": "상위 10개 키워드가 분석되었습니다."
+      }
+    },
+    "sentiment_analysis": {
+      "success": true,
+      "execution_time_seconds": 0.010511,
+      "sentiment_stats": {
+        "total_documents": 3,
+        "sentiment_distribution": {
+          "positive": {
+            "count": 0,
+            "percentage": 0.0,
+            "avg_compound": 0,
+            "avg_confidence": 0,
+            "std_compound": 0
+          },
+          "negative": {
+            "count": 2,
+            "percentage": 66.66666666666666,
+            "avg_compound": -0.65635,
+            "avg_confidence": 0.65635,
+            "std_compound": 0.25406346648032646
+          },
+          "neutral": {
+            "count": 1,
+            "percentage": 33.33333333333333,
+            "avg_compound": 0.0,
+            "avg_confidence": 1.0,
+            "std_compound": NaN
+          }
+        },
+        "compound_stats": {
+          "mean": -0.43756666666666666,
+          "std": 0.4193716291469099,
+          "min": -0.836,
+          "max": 0.0
+        }
+      },
+      "result": {
+        "success": true,
+        "statistics": {
+          "total_documents": 3,
+          "sentiment_distribution": {
+            "positive": {
+              "count": 0,
+              "percentage": 0.0,
+              "avg_compound": 0,
+              "avg_confidence": 0,
+              "std_compound": 0
+            },
+            "negative": {
+              "count": 2,
+              "percentage": 66.66666666666666,
+              "avg_compound": -0.65635,
+              "avg_confidence": 0.65635,
+              "std_compound": 0.25406346648032646
+            },
+            "neutral": {
+              "count": 1,
+              "percentage": 33.33333333333333,
+              "avg_compound": 0.0,
+              "avg_confidence": 1.0,
+              "std_compound": NaN
+            }
+          },
+          "compound_stats": {
+            "mean": -0.43756666666666666,
+            "std": 0.4193716291469099,
+            "min": -0.836,
+            "max": 0.0
+          }
+        },
+        "files": {
+          "results": "news_data/sentiment_analysis_results.csv",
+          "summary": "news_data/sentiment_analysis_summary.csv",
+          "extremes": "news_data/sentiment_analysis_extremes.csv"
+        },
+        "message": "감정 분석이 완료되었습니다."
+      }
+    },
+    "clustering": {
+      "success": true,
+      "execution_time_seconds": 0.060159,
+      "clusters_created": 1,
+      "result": {
+        "success": true,
+        "summary": {
+          "n_clusters": 1,
+          "total_documents": 3,
+          "cluster_sizes": [
+            2,
+            1
+          ],
+          "largest_cluster": 0,
+          "smallest_cluster": 1,
+          "size_std": 0.5
+        },
+        "message": "1개 클러스터로 분류 완료",
+        "files": {
+          "results": "news_data/test_clustering_results.csv",
+          "keywords": "news_data/test_clustering_keywords.json",
+          "summary": "news_data/test_clustering_summary.csv"
+        }
+      }
+    },
+    "topic_modeling": {
+      "success": false,
+      "execution_time_seconds": 0.025682,
+      "topics_found": 0,
+      "perplexity": 0,
+      "result": {
+        "success": false,
+        "error": "Shape of passed values is (3, 3), indices imply (3, 1)",
+        "message": "토픽 모델링 중 오류: Shape of passed values is (3, 3), indices imply (3, 1)"
+      }
+    },
+    "similarity_analysis": {
+      "success": true,
+      "execution_time_seconds": 0.003261,
+      "similarity_stats": {
+        "mean_similarity": 0.3333333333333333,
+        "max_similarity": 1.0,
+        "min_similarity": 0.0,
+        "std_similarity": 0.4714045207910317,
+        "median_similarity": 0.0
+      },
+      "similar_pairs_found": 3,
+      "result": {
+        "success": true,
+        "statistics": {
+          "mean_similarity": 0.3333333333333333,
+          "max_similarity": 1.0,
+          "min_similarity": 0.0,
+          "std_similarity": 0.4714045207910317,
+          "median_similarity": 0.0
+        },
+        "similar_pairs": [
+          {
+            "rank": 1,
+            "doc1_index": 1,
+            "doc1_title": "Geoff Keighley Confirms 7 Games Set for ONL on Tuesday Alongside Fallout Season 2 and a Clair Obscur: Expedition 33 Music Performance - IGN",
+            "doc2_index": 2,
+            "doc2_title": "iPhone 17 Pro Max Rumored to Have Major Telephoto Camera Upgrade - MacRumors",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "doc1_index": 0,
+            "doc1_title": "EA Knows Rush Sucks In The Battlefield 6 Beta And Is Already Fixing It - Kotaku",
+            "doc2_index": 2,
+            "doc2_title": "iPhone 17 Pro Max Rumored to Have Major Telephoto Camera Upgrade - MacRumors",
+            "similarity": 0.0
+          },
+          {
+            "rank": 3,
+            "doc1_index": 0,
+            "doc1_title": "EA Knows Rush Sucks In The Battlefield 6 Beta And Is Already Fixing It - Kotaku",
+            "doc2_index": 1,
+            "doc2_title": "Geoff Keighley Confirms 7 Games Set for ONL on Tuesday Alongside Fallout Season 2 and a Clair Obscur: Expedition 33 Music Performance - IGN",
+            "similarity": 0.0
+          }
+        ],
+        "files": {
+          "matrix": "news_data/similarity_analysis_matrix.csv",
+          "pairs": "news_data/similarity_analysis_pairs.csv",
+          "document_stats": "news_data/similarity_analysis_document_stats.csv",
+          "outliers": "news_data/similarity_analysis_outliers.csv",
+          "statistics": "news_data/similarity_analysis_statistics.csv"
+        },
+        "message": "문서 유사도 분석이 완료되었습니다."
+      }
+    }
+  },
+  "performance_metrics": {
+    "total_execution_time_seconds": 1.235196,
+    "successful_tests": 6,
+    "total_tests": 7,
+    "success_rate": 0.8571428571428571,
+    "articles_processed": 3,
+    "throughput_articles_per_second": 2.4287643418534386
+  },
+  "error_log": [
+    "토픽 모델링 실패"
+  ]
+}

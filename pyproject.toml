@@ -1,0 +1,32 @@
+[project]
+name = "python-ai-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.64.0",
+    "beautifulsoup4>=4.13.4",
+    "dotenv>=0.9.9",
+    "google-genai>=1.30.0",
+    "loguru>=0.7.3",
+    "lxml>=6.0.0",
+    "matplotlib>=3.10.5",
+    "networkx>=3.5",
+    "nltk>=3.9.1",
+    "numpy>=2.3.2",
+    "openai>=1.99.9",
+    "pandas>=2.3.1",
+    "pyldavis>=3.4.1",
+    "requests>=2.32.4",
+    "scikit-learn>=1.7.1",
+    "seaborn>=0.13.2",
+    "wordcloud>=1.9.4",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "flake8>=7.3.0",
+    "pytest>=8.4.1",
+]

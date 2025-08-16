@@ -1,0 +1,46 @@
+# .pre-commit-config.yaml
+
+repos:
+  -   repo: https://github.com/astral-sh/ruff-pre-commit
+      # 원하는 ruff 버전을 명시합니다. (최신 버전은 repo에서 확인)
+      rev: v0.12.3
+      hooks:
+        # Run the linter.
+        - id: ruff-check
+          args: [ --fix ]
+        # Run the formatter.
+        - id: ruff-format
+
+  # ----------------------------------------------------------------
+  # 기본 파일 형식 검사 (공백, 파일 끝 개행 등)
+  # ----------------------------------------------------------------
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace # 라인 끝의 불필요한 공백 제거
+      - id: end-of-file-fixer # 파일 끝에 한 줄의 개행 추가
+      - id: check-yaml # YAML 파일 문법 검사
+      - id: check-toml # TOML 파일 문법 검사 (pyproject.toml)
+      - id: check-merge-conflict # 병합 충돌 마커가 커밋되는 것을 방지
+
+  # ----------------------------------------------------------------
+  # Python 코드 품질 관리
+  # ----------------------------------------------------------------
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort # import 순서를 자동으로 정렬 (black과 호환되도록 설정)
+        name: isort (python)
+        args: ["--profile", "black"]
+
+  - repo: https://github.com/psf/black
+    rev: 24.8.0
+    hooks:
+      - id: black # "uncompromising" 코드 포맷터
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.1.0
+    hooks:
+      - id: flake8 # 코드 스타일 및 잠재적 에러 검사
+        args: ["--max-line-length=88", "--ignore=E203,W503"]
+        # .flake8 설정 파일이 있다면 위 args는 생략 가능

@@ -1,0 +1,338 @@
+{
+  "cluster_0": [
+    {
+      "keyword": "xbox",
+      "score": 0.30528769940855266
+    },
+    {
+      "keyword": "windows",
+      "score": 0.19106481609815695
+    },
+    {
+      "keyword": "microsoft",
+      "score": 0.13579346164516606
+    },
+    {
+      "keyword": "series",
+      "score": 0.08987518613241981
+    },
+    {
+      "keyword": "game",
+      "score": 0.08709201423622892
+    },
+    {
+      "keyword": "microsofts",
+      "score": 0.08487790722576474
+    },
+    {
+      "keyword": "gaming",
+      "score": 0.07625606162263811
+    },
+    {
+      "keyword": "security",
+      "score": 0.0751032428256123
+    },
+    {
+      "keyword": "exchange",
+      "score": 0.06797755924997823
+    },
+    {
+      "keyword": "business",
+      "score": 0.06681789405943384
+    }
+  ],
+  "cluster_1": [
+    {
+      "keyword": "beta",
+      "score": 0.2666660194778794
+    },
+    {
+      "keyword": "access",
+      "score": 0.18869823092076377
+    },
+    {
+      "keyword": "battlefield",
+      "score": 0.1548057760473428
+    },
+    {
+      "keyword": "galaxy",
+      "score": 0.12093208826474339
+    },
+    {
+      "keyword": "samsung",
+      "score": 0.11489691963689912
+    },
+    {
+      "keyword": "twitch",
+      "score": 0.11439993569092409
+    },
+    {
+      "keyword": "twitch drops",
+      "score": 0.10710490621348916
+    },
+    {
+      "keyword": "boot",
+      "score": 0.0955511088277772
+    },
+    {
+      "keyword": "chatgpt",
+      "score": 0.08762076621629908
+    },
+    {
+      "keyword": "secure boot",
+      "score": 0.08754035372921926
+    }
+  ],
+  "cluster_2": [
+    {
+      "keyword": "apple",
+      "score": 0.2246266970036203
+    },
+    {
+      "keyword": "iphone",
+      "score": 0.09000999827495502
+    },
+    {
+      "keyword": "pro",
+      "score": 0.07793494340267561
+    },
+    {
+      "keyword": "smart",
+      "score": 0.07011418031525256
+    },
+    {
+      "keyword": "ipad",
+      "score": 0.06687678848629168
+    },
+    {
+      "keyword": "watch",
+      "score": 0.06470827780864036
+    },
+    {
+      "keyword": "phones",
+      "score": 0.06449941688273511
+    },
+    {
+      "keyword": "lock",
+      "score": 0.059376042704612185
+    },
+    {
+      "keyword": "lenovo",
+      "score": 0.05649496189412553
+    },
+    {
+      "keyword": "google",
+      "score": 0.05574410989793033
+    }
+  ],
+  "cluster_3": [
+    {
+      "keyword": "switch",
+      "score": 0.38210607927203466
+    },
+    {
+      "keyword": "nintendo",
+      "score": 0.1660638083411055
+    },
+    {
+      "keyword": "mario",
+      "score": 0.13843934903063523
+    },
+    {
+      "keyword": "mina",
+      "score": 0.1296505099469268
+    },
+    {
+      "keyword": "hollower",
+      "score": 0.09472713267690788
+    },
+    {
+      "keyword": "game",
+      "score": 0.09208312207885089
+    },
+    {
+      "keyword": "trailer",
+      "score": 0.08902427402232728
+    },
+    {
+      "keyword": "oled",
+      "score": 0.08287511738246922
+    },
+    {
+      "keyword": "mina hollower",
+      "score": 0.07973834054251862
+    },
+    {
+      "keyword": "world",
+      "score": 0.07102235111636206
+    }
+  ],
+  "cluster_4": [
+    {
+      "keyword": "doom",
+      "score": 0.3570332843086692
+    },
+    {
+      "keyword": "skin",
+      "score": 0.26574706323848013
+    },
+    {
+      "keyword": "quakecon",
+      "score": 0.1952157842950999
+    },
+    {
+      "keyword": "free",
+      "score": 0.1553562254009695
+    },
+    {
+      "keyword": "slayer skin",
+      "score": 0.14707823164685402
+    },
+    {
+      "keyword": "slayer",
+      "score": 0.14629596389760527
+    },
+    {
+      "keyword": "doom dark",
+      "score": 0.14174708424262106
+    },
+    {
+      "keyword": "dark ages",
+      "score": 0.14174708424262106
+    },
+    {
+      "keyword": "fortnite",
+      "score": 0.13136557966041196
+    },
+    {
+      "keyword": "ages",
+      "score": 0.13087737582826808
+    }
+  ],
+  "cluster_5": [
+    {
+      "keyword": "sea",
+      "score": 0.07883883906282572
+    },
+    {
+      "keyword": "like",
+      "score": 0.07189455169849021
+    },
+    {
+      "keyword": "pixel",
+      "score": 0.06382361585695827
+    },
+    {
+      "keyword": "season",
+      "score": 0.06340354762545608
+    },
+    {
+      "keyword": "tier",
+      "score": 0.05934953207514407
+    },
+    {
+      "keyword": "game",
+      "score": 0.045143975693718
+    },
+    {
+      "keyword": "games",
+      "score": 0.04501556706962648
+    },
+    {
+      "keyword": "dont",
+      "score": 0.044798404306628
+    },
+    {
+      "keyword": "aug",
+      "score": 0.04146478510224888
+    },
+    {
+      "keyword": "power",
+      "score": 0.040254562872272026
+    }
+  ],
+  "cluster_6": [
+    {
+      "keyword": "sony",
+      "score": 0.2621767768006529
+    },
+    {
+      "keyword": "sonys",
+      "score": 0.24031941790380773
+    },
+    {
+      "keyword": "latest",
+      "score": 0.17003400776505356
+    },
+    {
+      "keyword": "theft",
+      "score": 0.13111053949715087
+    },
+    {
+      "keyword": "post",
+      "score": 0.11576325271017528
+    },
+    {
+      "keyword": "projects",
+      "score": 0.11576325271017528
+    },
+    {
+      "keyword": "auto",
+      "score": 0.11490196086692672
+    },
+    {
+      "keyword": "playstation",
+      "score": 0.11099717402200286
+    },
+    {
+      "keyword": "bungie",
+      "score": 0.10589705715976865
+    },
+    {
+      "keyword": "tao",
+      "score": 0.10148229757779759
+    }
+  ],
+  "cluster_7": [
+    {
+      "keyword": "pokmon",
+      "score": 0.6314378497334026
+    },
+    {
+      "keyword": "adventure",
+      "score": 0.31380626482567764
+    },
+    {
+      "keyword": "cannon",
+      "score": 0.2421805503165052
+    },
+    {
+      "keyword": "event",
+      "score": 0.164277182427362
+    },
+    {
+      "keyword": "pdt",
+      "score": 0.12835984332308104
+    },
+    {
+      "keyword": "2025",
+      "score": 0.12519336763978592
+    },
+    {
+      "keyword": "mystery",
+      "score": 0.10268787465846484
+    },
+    {
+      "keyword": "august 2025",
+      "score": 0.09607265875968322
+    },
+    {
+      "keyword": "total",
+      "score": 0.09607265875968322
+    },
+    {
+      "keyword": "dark",
+      "score": 0.09374159721868872
+    }
+  ]
+}
