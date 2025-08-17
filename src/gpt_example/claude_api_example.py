@@ -8,9 +8,12 @@ pip install anthropic
 import os
 
 import anthropic
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # API 키 설정
-client = anthropic.Anthropic(api_key=os.getenv("GEMINI_API_KEY"))
+client = anthropic.Anthropic(api_key=os.getenv("CLAUDE_API_KEY"))
 
 
 def basic_chat_example():

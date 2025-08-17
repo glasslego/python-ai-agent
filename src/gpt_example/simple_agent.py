@@ -10,19 +10,24 @@ Simple OpenAI Agent - 기본 학습용
 
 import os
 
+from dotenv import load_dotenv
 from openai import OpenAI
+
+load_dotenv()
+
+open_api_key = os.getenv("OPENAI_API_KEY")
 
 
 class SimpleAgent:
-    def __init__(self, api_key: str = None):
+    def __init__(self):
         """
         Simple Agent 초기화
 
         Args:
             api_key: OpenAI API 키
         """
-        # API 키 설정 (환경변수 또는 직접 입력)
-        self.api_key = api_key or os.getenv("OPENAI_API_KEY")
+        self.api_key = open_api_key
+
         if not self.api_key:
             print("⚠️  API 키를 설정해주세요:")
             print("   방법1: 환경변수 설정 - export OPENAI_API_KEY='your-key'")
@@ -237,4 +242,5 @@ def main():
 
 
 if __name__ == "__main__":
+    print(f"OPENAI_API_KEY: {os.getenv('OPENAI_API_KEY')}")
     main()

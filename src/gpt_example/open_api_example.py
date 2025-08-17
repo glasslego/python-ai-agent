@@ -1,7 +1,3 @@
-import os
-
-from openai import OpenAI
-
 # https://platform.openai.com/docs/quickstart?lang=python
 
 """
@@ -11,6 +7,12 @@ from openai import OpenAI
 pip install openai
 """
 
+import os
+
+from dotenv import load_dotenv
+from openai import OpenAI
+
+load_dotenv()
 
 # API 키 설정 (환경변수 사용 권장)
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))

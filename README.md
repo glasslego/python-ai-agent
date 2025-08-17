@@ -12,10 +12,17 @@ source .venv/bin/activate
 
 uv init
 ```
+### 환경변수 설정
+```bash
+#.env 파일에 아래 환경변수 추가
+OPENAI_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+CLAUDE_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+GEMINI_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
 
 ## 시스템 아키텍처
 
-```mermaid
+```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   News API      │    │  Web Scraper    │    │  Data Storage   │
 │   (뉴스 수집)     │───▶│  (콘텐츠 추출)     │───▶│  (Pandas DF)    │
