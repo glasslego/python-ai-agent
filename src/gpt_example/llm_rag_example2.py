@@ -20,10 +20,22 @@ class AdvancedRAG:
     def get_embedding(self, text: str) -> List[float]:
         """OpenAI Embedding API를 사용하여 텍스트 임베딩 생성"""
         try:
+            # OpenAI Embeddings API 호출
+            # text-embedding-ada-002: OpenAI의 최신 임베딩 모델
             response = client.embeddings.create(
-                model="text-embedding-ada-002", input=text
+                model="text-embedding-ada-002",  # 임베딩 모델 지정
+                input=text,  # 변환할 텍스트 입력
             )
-            return response.data[0].embedding
+            embedding_vector = response.data[0].embedding
+
+            # 임베딩 벡터 정보 출력 (디버깅용)
+            print(f"임베딩 생성 완료 - 차원: {len(embedding_vector)}")
+            print(f"텍스트: '{text[:50]}...' (처음 50자)")
+            print(
+                f"벡터 예시: [{embedding_vector[0]:.6f}, {embedding_vector[1]:.6f}, ...]"
+            )
+
+            return embedding_vector
         except Exception as e:
             print(f"임베딩 생성 오류: {e}")
             return []
@@ -53,28 +65,68 @@ class AdvancedRAG:
         return dot_product / (magnitude_a * magnitude_b)
 
     def retrieve_relevant_documents(self, query: str, top_k: int = 2) -> List[str]:
-        """질문과 관련된 문서 검색 (OpenAI Embedding 사용)"""
+        """
+        질문과 관련된 문서 검색 (OpenAI Embedding 사용)
+
+        Args:
+            query (str): 검색할 질문
+            top_k (int): 반환할 상위 문서 개수
+
+        Returns:
+            List[str]: 관련성이 높은 문서들 (유사도 순서대로 정렬)
+        """
         if not self.documents or not self.embeddings:
+            print("⚠️  저장된 문서나 임베딩이 없습니다.")
             return []
 
+        print(f"🔍 질문 임베딩 생성 중: '{query}'")
+
+        # 1. 질문을 임베딩으로 변환
         query_embedding = self.get_embedding(query)
         if not query_embedding:
+            print("❌ 질문 임베딩 생성 실패")
             return []
 
-        # 유사도 계산
+        print("📊 문서들과 유사도 계산 중...")
+
+        # 2. 모든 문서와 질문 간의 유사도 계산
         similarities = []
-        for doc_embedding in self.embeddings:
+        for i, doc_embedding in enumerate(self.embeddings):
             similarity = self.cosine_similarity(query_embedding, doc_embedding)
             similarities.append(similarity)
+            print(f"   문서 {i + 1}: 유사도 = {similarity:.4f}")
 
-        # 가장 유사한 문서들 선택
+        # 3. 유사도 기준으로 상위 k개 문서 선택
+        # enumerate로 인덱스와 유사도를 함께 정렬
+        indexed_similarities = list(enumerate(similarities))
+        # 유사도 기준 내림차순 정렬 후 상위 k개 선택
         top_indices = sorted(
-            range(len(similarities)), key=lambda i: similarities[i], reverse=True
+            indexed_similarities,
+            key=lambda x: x[1],  # 유사도(두 번째 요소)로 정렬
+            reverse=True,  # 내림차순
         )[:top_k]
 
-        relevant_docs = [
-            self.documents[i] for i in top_indices if similarities[i] > 0.7
-        ]  # 임계값 설정
+        print(f"🎯 상위 {top_k}개 문서 선택:")
+
+        # 4. 임계값 적용하여 관련성이 높은 문서만 선택
+        relevant_docs = []
+        similarity_threshold = 0.7  # 유사도 임계값 (70% 이상)
+
+        for idx, similarity in top_indices:
+            print(
+                f"   순위 {len(relevant_docs) + 1}: 문서 {idx + 1} (유사도: {similarity:.4f})"
+            )
+
+            if similarity > similarity_threshold:
+                relevant_docs.append(self.documents[idx])
+                print("     ✅ 임계값 통과 - 선택됨")
+            else:
+                print(
+                    f"     ❌ 임계값 미달 ({similarity:.4f} <= {similarity_threshold}) - 제외"
+                )
+
+        if not relevant_docs:
+            print(f"⚠️  임계값 {similarity_threshold} 이상인 관련 문서가 없습니다.")
 
         return relevant_docs
 
