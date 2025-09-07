@@ -2,8 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-# 한글 폰트 설정 (선택사항)
-plt.rcParams["font.family"] = "DejaVu Sans"
+plt.rcParams["font.family"] = "AppleGothic"  # MacOS
 
 
 class KMeans:

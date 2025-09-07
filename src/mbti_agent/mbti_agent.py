@@ -3,11 +3,15 @@ from typing import Dict, List
 
 import numpy as np
 import pandas as pd
+from dotenv import load_dotenv
 from openai import OpenAI
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+load_dotenv()
+
+# API 키 설정 (환경변수 사용 권장)
+# client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 class RAGMBTIAgent:
@@ -184,7 +188,7 @@ class RAGMBTIAgent:
 # 사용 예시
 def main():
     # RAG MBTI Agent 초기화
-    agent = RAGMBTIAgent(api_key=OPENAI_API_KEY)
+    agent = RAGMBTIAgent()
 
     # 사용 예시
     user_input = "나는 사람들과 어울리는 것을 좋아하고 책임감이 강한편이고. 감정적인 편이야. 난 어떤 MBTI 유형일까?"
