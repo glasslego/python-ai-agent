@@ -14,14 +14,7 @@ from loguru import logger
 from nltk.sentiment import SentimentIntensityAnalyzer
 
 # 폰트 설정
-plt.rcParams["font.family"] = [
-    "DejaVu Sans",
-    "AppleGothic",
-    "Malgun Gothic",
-    "gulim",
-    "Arial Unicode MS",
-]
-plt.rcParams["axes.unicode_minus"] = False
+plt.rcParams["font.family"] = "AppleGothic"  # MacOS
 
 # 경고 무시
 warnings.filterwarnings(
@@ -508,7 +501,7 @@ class SentimentAnalyzer:
 if __name__ == "__main__":
     logger.info("😊 감정 분석 모듈 테스트")
 
-    df = pd.read_csv("processed_news.csv")
+    df = pd.read_csv("../processed_news.csv")
 
     # 감정 분석 수행
     analyzer = SentimentAnalyzer()

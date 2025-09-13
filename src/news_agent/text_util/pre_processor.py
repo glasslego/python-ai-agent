@@ -311,7 +311,7 @@ if __name__ == "__main__":
 
     # DataFrame 전처리 예제 (CSV 파일이 있는 경우)
     try:
-        df = pd.read_csv("collected_news.csv")
+        df = pd.read_csv("../collected_news.csv")
         processed_df = preprocessor.preprocess_dataframe(df)
 
         if processed_df.empty:

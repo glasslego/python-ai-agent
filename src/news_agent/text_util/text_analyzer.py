@@ -17,7 +17,7 @@ class TextAnalyzer:
         self,
         max_features: int = 1000,
         ngram_range: Tuple[int, int] = (1, 2),
-        min_df: int = 2,
+        min_df: int = 1,
         max_df: float = 0.95,
     ):
         """
@@ -329,7 +329,7 @@ if __name__ == "__main__":
     # 사용 예제
     analyzer = TextAnalyzer(max_features=1500, ngram_range=(1, 3))
 
-    df = pd.read_csv("processed_news.csv")
+    df = pd.read_csv("../processed_news.csv")
     sample_texts = df["processed_text"].dropna().tolist()
 
     try:
