@@ -1,15 +1,16 @@
 # flake8: noqa E501
 
-import streamlit as st
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
+
+import streamlit as st
 
 load_dotenv()
 
 """
 실행 하기
 
-streamlit run /Users/megan/work/megan-study/python-ai-agent/src/llm/simple_agent/simple_chatbot.py
+streamlit run src/llm/langchain/simple_agent/simple_chatbot.py
 """
 
 

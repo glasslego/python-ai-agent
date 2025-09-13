@@ -26,7 +26,7 @@ def basic_llm_example():
 
     # 단순 호출
     simple_response = llm.invoke(
-        "2024년 현재 가장 인기있는 프로그래밍 언어 3개를 알려줘"
+        "2025년 현재 가장 인기있는 프로그래밍 언어 3개를 알려줘"
     )
     print("단순 질문 응답:")
     print(simple_response.content)
@@ -43,7 +43,7 @@ def basic_llm_with_params():
     creative_llm = ChatOpenAI(
         model="gpt-3.5-turbo",
         temperature=0.9,  # 0~1, 높을수록 창의적
-        max_tokens=100,  # 최대 토큰 수
+        max_tokens=300,  # 최대 토큰 수
     )
 
     # 정확한 답변 (낮은 temperature)
@@ -57,8 +57,8 @@ def basic_llm_with_params():
     creative_answer = creative_llm.invoke(question)
     precise_answer = precise_llm.invoke(question)
 
-    print(f"창의적 답변 (temp=0.9): {creative_answer.content[:100]}...")
-    print(f"정확한 답변 (temp=0.1): {precise_answer.content[:100]}...")
+    print(f"창의적 답변 (temp=0.9): {creative_answer.content[:300]}...")
+    print(f"정확한 답변 (temp=0.1): {precise_answer.content[:300]}...")
 
     return creative_answer, precise_answer
 

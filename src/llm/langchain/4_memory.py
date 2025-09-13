@@ -284,9 +284,6 @@ def memory_custom_session():
 
 if __name__ == "__main__":
     memory_conversation_buffer()
-    print("\n" + "=" * 50 + "\n")
     memory_conversation_summary()
-    print("\n" + "=" * 50 + "\n")
     memory_window_buffer()
-    print("\n" + "=" * 50 + "\n")
     memory_custom_session()
