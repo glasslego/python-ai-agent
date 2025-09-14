@@ -4,8 +4,8 @@ from datetime import datetime, timedelta
 
 class ScheduleAgent:
     def __init__(self):
-        self.schedule_file = "/tmp/schedules.json"
-        self.todo_file = "/tmp/todos.json"
+        self.schedule_file = "../tmp/schedules.json"
+        self.todo_file = "../tmp/todos.json"
 
     def add_schedule(
         self,

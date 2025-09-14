@@ -94,7 +94,7 @@ def get_stock_price(symbol: str) -> str:
 def add_schedule(date: str, task: str) -> str:
     """일정을 추가합니다."""
     # 간단한 파일 저장
-    schedule_file = "/tmp/schedules.json"
+    schedule_file = "../tmp/schedules.json"
 
     try:
         try:
@@ -118,7 +118,7 @@ def add_schedule(date: str, task: str) -> str:
 @tool
 def get_schedule(date: str) -> str:
     """특정 날짜의 일정을 조회합니다."""
-    schedule_file = "/tmp/schedules.json"
+    schedule_file = "../tmp/schedules.json"
 
     try:
         with open(schedule_file, "r", encoding="utf-8") as f:

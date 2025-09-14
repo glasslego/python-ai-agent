@@ -57,7 +57,7 @@ def create_demo_schedule():
     ]
 
     # 일정 파일 저장
-    schedule_file = "/tmp/schedules.json"
+    schedule_file = "tmp/schedules.json"
     with open(schedule_file, "w", encoding="utf-8") as f:
         json.dump(schedules, f, ensure_ascii=False, indent=2)
 
@@ -97,7 +97,7 @@ def create_demo_todos():
     ]
 
     # 할일 파일 저장
-    todo_file = "/tmp/todos.json"
+    todo_file = "tmp/todos.json"
     with open(todo_file, "w", encoding="utf-8") as f:
         json.dump(todos, f, ensure_ascii=False, indent=2)
 
@@ -132,7 +132,7 @@ def create_demo_watchlist():
     }
 
     # 관심종목 파일 저장
-    watchlist_file = "/tmp/stock_watchlist.json"
+    watchlist_file = "tmp/stock_watchlist.json"
     with open(watchlist_file, "w", encoding="utf-8") as f:
         json.dump(watchlist, f, ensure_ascii=False, indent=2)
 
@@ -144,7 +144,7 @@ def create_all_demo_data():
     print("🔧 데모 데이터 생성 중...")
 
     # /tmp 디렉토리 확인/생성
-    os.makedirs("/tmp", exist_ok=True)
+    os.makedirs("tmp", exist_ok=True)
 
     create_demo_schedule()
     create_demo_todos()
@@ -152,9 +152,9 @@ def create_all_demo_data():
 
     print("\n🎉 모든 데모 데이터 생성이 완료되었습니다!")
     print("\n📋 생성된 파일들:")
-    print("- /tmp/schedules.json (일정 데이터)")
-    print("- /tmp/todos.json (할일 데이터)")
-    print("- /tmp/stock_watchlist.json (관심종목 데이터)")
+    print("- tmp/schedules.json (일정 데이터)")
+    print("- tmp/todos.json (할일 데이터)")
+    print("- tmp/stock_watchlist.json (관심종목 데이터)")
 
 
 if __name__ == "__main__":

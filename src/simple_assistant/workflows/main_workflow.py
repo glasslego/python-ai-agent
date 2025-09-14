@@ -53,9 +53,7 @@ class SmartAssistant:
         # OpenAI ChatGPT 모델 초기화
         # - model: gpt-3.5-turbo (비용 효율적)
         # - temperature: 0.1 (일관된 답변을 위해 낮은 값)
-        self.llm = ChatOpenAI(
-            model="gpt-3.5-turbo", temperature=0.1, openai_api_key=api_key
-        )
+        self.llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.1)
 
         # 에이전트가 사용할 수 있는 도구들의 목록
         # 각 도구는 @tool 데코레이터로 정의된 함수들
@@ -143,6 +141,44 @@ class SmartAssistant:
             return f"처리 중 오류가 발생했습니다: {str(e)}"
 
 
+def tools_test():
+    print("\n🔧 개별 도구 테스트:")
+
+    # 뉴스 검색 도구 테스트
+    print("\n📰 뉴스 검색 테스트:")
+    news_result = search_news.invoke({"query": "AI"})
+    print(news_result)
+
+    # 날씨 조회 도구 테스트
+    print("\n🌤️ 날씨 조회 테스트:")
+    weather_result = get_weather.invoke({"city": "Seoul"})
+    print(weather_result)
+
+    # 환율 조회 도구 테스트
+    print("\n💱 환율 조회 테스트:")
+    exchange_result = get_exchange_rate.invoke(
+        {"from_currency": "USD", "to_currency": "KRW"}
+    )
+    print(exchange_result)
+
+    # 주식 가격 조회 도구 테스트
+    print("\n📈 주식 조회 테스트:")
+    stock_result = get_stock_price.invoke({"symbol": "005930"})
+    print(stock_result)
+
+    # 일정 추가 도구 테스트
+    print("\n📅 일정 추가 테스트:")
+    schedule_add_result = add_schedule.invoke(
+        {"date": "2024-03-25", "task": "LangChain 테스트"}
+    )
+    print(schedule_add_result)
+
+    # 일정 조회 도구 테스트
+    print("\n📅 일정 조회 테스트:")
+    schedule_get_result = get_schedule.invoke({"date": "2024-03-25"})
+    print(schedule_get_result)
+
+
 def main():
     """
     테스트 함수 - OpenAI API 키가 필요합니다
@@ -152,54 +188,8 @@ def main():
     2. API 키가 없을 때: 개별 도구들만 테스트 (더미 데이터)
     """
     print("🧪 SmartAssistant (LangChain ReAct) 테스트")
-
-    # API 키 존재 여부 확인
-    if not os.getenv("OPENAI_API_KEY"):
-        # API 키가 없는 경우: 사용자에게 안내 후 개별 도구 테스트
-        print("❌ OPENAI_API_KEY 환경변수가 설정되지 않았습니다.")
-        print("   .env 파일에 OPENAI_API_KEY를 설정하거나")
-        print("   export OPENAI_API_KEY='your-api-key' 로 설정해주세요.")
-        print("\n📝 참고: API 키 없이는 더미 도구만 테스트됩니다.")
-
-        # 도구별 개별 테스트 실행
-        # 각 도구의 기본 동작을 확인 (실제 API 호출 없이 더미 데이터 반환)
-        print("\n🔧 개별 도구 테스트:")
-
-        # 뉴스 검색 도구 테스트
-        print("\n📰 뉴스 검색 테스트:")
-        news_result = search_news.invoke({"query": "AI"})
-        print(news_result)
-
-        # 날씨 조회 도구 테스트
-        print("\n🌤️ 날씨 조회 테스트:")
-        weather_result = get_weather.invoke({"city": "Seoul"})
-        print(weather_result)
-
-        # 환율 조회 도구 테스트
-        print("\n💱 환율 조회 테스트:")
-        exchange_result = get_exchange_rate.invoke(
-            {"from_currency": "USD", "to_currency": "KRW"}
-        )
-        print(exchange_result)
-
-        # 주식 가격 조회 도구 테스트
-        print("\n📈 주식 조회 테스트:")
-        stock_result = get_stock_price.invoke({"symbol": "005930"})
-        print(stock_result)
-
-        # 일정 추가 도구 테스트
-        print("\n📅 일정 추가 테스트:")
-        schedule_add_result = add_schedule.invoke(
-            {"date": "2024-03-25", "task": "LangChain 테스트"}
-        )
-        print(schedule_add_result)
-
-        # 일정 조회 도구 테스트
-        print("\n📅 일정 조회 테스트:")
-        schedule_get_result = get_schedule.invoke({"date": "2024-03-25"})
-        print(schedule_get_result)
-
-        return
+    # print("tools_test() 함수로 개별 도구들도 테스트합니다.")
+    # tools_test()
 
     try:
         # API 키가 있는 경우: 완전한 SmartAssistant 테스트
