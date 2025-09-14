@@ -15,6 +15,7 @@ dependencies = [
     "langchain-community>=0.3.29",
     "langchain-huggingface>=0.3.1",
     "langchain-openai>=0.3.32",
+    "langgraph>=0.6.7",
     "loguru>=0.7.3",
     "lxml>=6.0.0",
     "matplotlib>=3.10.5",
