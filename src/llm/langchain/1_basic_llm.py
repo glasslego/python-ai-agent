@@ -10,7 +10,7 @@ load_dotenv()
 # ============================================================
 
 
-def basic_llm_example():
+def basic_llm_example(model_version="gpt-3.5-turbo"):
     """
     가장 기본적인 LLM 호출 예제
     - 단순 질문/답변
@@ -20,7 +20,7 @@ def basic_llm_example():
 
     # LLM 초기화
     llm = ChatOpenAI(
-        model="gpt-3.5-turbo",
+        model=model_version,
         temperature=0.7,
     )
 
@@ -34,21 +34,21 @@ def basic_llm_example():
     return simple_response
 
 
-def basic_llm_with_params():
+def basic_llm_with_params(model_version="gpt-3.5-turbo"):
     """
     파라미터를 조절한 LLM 호출 예제
     """
 
     # 창의적인 답변 (높은 temperature)
     creative_llm = ChatOpenAI(
-        model="gpt-3.5-turbo",
+        model=model_version,
         temperature=0.9,  # 0~1, 높을수록 창의적
         max_tokens=300,  # 최대 토큰 수
     )
 
     # 정확한 답변 (낮은 temperature)
     precise_llm = ChatOpenAI(
-        model="gpt-3.5-turbo",
+        model=model_version,
         temperature=0.1,  # 낮을수록 일관적
     )
 
@@ -63,13 +63,13 @@ def basic_llm_with_params():
     return creative_answer, precise_answer
 
 
-def basic_llm_streaming():
+def basic_llm_streaming(model_version="gpt-3.5-turbo"):
     """
     스트리밍 방식으로 LLM 응답 받기
     """
 
     llm = ChatOpenAI(
-        model="gpt-3.5-turbo",
+        model=model_version,
         streaming=True,  # 스트리밍 활성화
     )
 
@@ -80,6 +80,20 @@ def basic_llm_streaming():
 
 
 if __name__ == "__main__":
-    basic_llm_example()
-    basic_llm_with_params()
-    basic_llm_streaming()
+    model_version = "gpt-3.5-turbo"
+    print(f"model_version: {model_version}")
+    basic_llm_example(model_version=model_version)
+    basic_llm_with_params(model_version=model_version)
+    basic_llm_streaming(model_version=model_version)
+
+    model_version = "gpt-4o"
+    print(f"model_version: {model_version}")
+    basic_llm_example(model_version=model_version)
+    basic_llm_with_params(model_version=model_version)
+    basic_llm_streaming(model_version=model_version)
+
+    model_version = "gpt-5"
+    print(f"model_version: {model_version}")
+    basic_llm_example(model_version=model_version)
+    basic_llm_with_params(model_version=model_version)
+    basic_llm_streaming(model_version=model_version)
