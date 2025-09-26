@@ -40,7 +40,7 @@ python main.py
 
 #### Streamlit 웹 UI 버전
 ```bash
-streamlit run src/simple_assistant/app.py
+PYTHONPATH=. streamlit run src/simple_assistant/app.py
 ```
 
 브라우저에서 http://localhost:8501 접속
